@@ -1,0 +1,17 @@
+.button-theme {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.button-theme.red {
+  background-color: #ff4d4d;
+  color: #ffffff;
+}
+
+.button-theme.blue {
+  background-color: #646cff;
+  color: #ffffff;
+}

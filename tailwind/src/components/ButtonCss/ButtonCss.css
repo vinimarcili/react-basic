@@ -1,0 +1,22 @@
+.button {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background-color: #fff;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  gap: 1rem;
+}
+
+.button-icon {
+  flex-shrink: 0;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.button-content {
+  color: #1a202c;
+  font-size: 1.25rem;
+  line-height: 1.25;
+}

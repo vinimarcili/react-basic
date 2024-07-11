@@ -1,11 +1,15 @@
 import './App.css'
+import ButtonCss from './components/ButtonCss/ButtonCss'
+import ButtonTailwind from './components/ButtonTailwind/ButtonTailwind'
 
 function App() {
 
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <>
+      <ButtonCss>Click me</ButtonCss>
+      <br />
+      <ButtonTailwind icon='👎'>Click me</ButtonTailwind>
+    </>
   )
 }
 

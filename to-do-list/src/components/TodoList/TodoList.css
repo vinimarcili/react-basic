@@ -1,0 +1,22 @@
+ul {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+  margin: 1rem 0;
+}
+
+p {
+  color: gray;
+}
+
+form {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+form button {
+  margin-top: auto;
+  margin-left: auto;
+}

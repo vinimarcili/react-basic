@@ -1,0 +1,15 @@
+.themed-component.red {
+  background-color: #e87d7d;
+  color: #700303;
+  border-color: #700303;
+}
+
+.themed-component.blue {
+  background-color: #7d9ce8;
+  color: #062a6b;
+  border-color: #062a6b;
+}
+
+.themed-component * {
+  color: inherit
+}

@@ -1,0 +1,45 @@
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.input-label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+}
+
+.input-theme {
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  border-width: 2px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-theme:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.red .input-theme {
+  background-color: #e87d7d;
+  color: #700303;
+  border-color: #700303;
+}
+
+.blue .input-theme {
+  background-color: #7d9ce8;
+  color: #062a6b;
+  border-color: #062a6b;
+}
+
+.red label {
+  color: #e87d7d;
+}
+
+.blue label {
+  color: #7d9ce8;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import InteractiveCard from './InteractiveCard';
+import InteractiveCard from './components/interactive-card/InteractiveCard';
 
 interface Product {
   name: string;

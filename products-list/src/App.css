@@ -1,9 +1,49 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%;
 }
+
+.app-bg {
+  min-height: 100vh;
+  background: var(--app-bg, #ececec);
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.products-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  width: 100%;
+  display: block;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+    max-width: 95vw;
+    justify-content: center;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --app-bg: #181a20;
+  }
+}
+
+
 
 .logo {
   height: 6em;
@@ -38,17 +78,17 @@
 
 .card {
   padding: 2em;
+  min-width: 220px;
+  max-width: 300px;
+  width: auto;
+  box-sizing: border-box;
 }
 
 .read-the-docs {
   color: #888;
 }
 
-@media (max-width: 900px) {
-  div[style*='grid-template-columns'] {
-    grid-template-columns: 1fr;
-  }
-}
+
 
 @media (prefers-color-scheme: dark) {
   :root {

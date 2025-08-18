@@ -1,5 +1,7 @@
 import React from 'react';
-import InteractiveCard from './components/interactive-card/InteractiveCard';
+
+import './ProductList.css';
+import InteractiveCard from '../interactive-card/InteractiveCard';
 
 interface Product {
   name: string;
@@ -13,15 +15,7 @@ interface ProductListProps {
 
 const ProductList: React.FC<ProductListProps> = ({ items }) => {
   return (
-    <div
-      style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(3, 1fr)',
-        gap: '1.5rem',
-        justifyItems: 'center',
-        maxWidth: '100vw',
-      }}
-    >
+    <div className="products-grid">
       {items.map((product, idx) => (
         <InteractiveCard
           key={idx}

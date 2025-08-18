@@ -1,0 +1,17 @@
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 1.5rem;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+    max-width: 95vw;
+    justify-content: center;
+  }
+}

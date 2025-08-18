@@ -1,5 +1,7 @@
 
+
 import InteractiveCard from './InteractiveCard';
+import ProductList from './ProductList';
 import './App.css';
 
 const products = Array.from({ length: 9 }, (_, i) => ({
@@ -12,6 +14,8 @@ function App() {
   return (
     <div style={{ minHeight: '100vh', background: 'var(--app-bg, #ececec)', padding: '2rem' }}>
       <h1 style={{ textAlign: 'center', marginBottom: '2rem' }}>Lista de Produtos</h1>
+      {/* Versão original: cards renderizados diretamente com .map */}
+      {/*
       <div
         style={{
           display: 'grid',
@@ -30,6 +34,10 @@ function App() {
           />
         ))}
       </div>
+      */}
+
+      {/* Nova versão: usando componente ProductList */}
+      <ProductList items={products} />
       <style>{`
         @media (max-width: 900px) {
           div[style*='grid-template-columns'] {

@@ -1,0 +1,32 @@
+
+.button {
+  background-color: #61dafb;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #4fa3d1;
+}
+
+@media (prefers-color-scheme: dark) {
+  .button {
+    background-color: #282c34;
+    color: #61dafb;
+    border: 1px solid #61dafb;
+  }
+
+  .button:hover {
+    background-color: #61dafb;
+    color: #282c34;
+  }
+}

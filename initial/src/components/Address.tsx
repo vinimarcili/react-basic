@@ -27,7 +27,7 @@ const Address = () => {
     fetch(`https://viacep.com.br/ws/${zipcode}/json/`)
       .then((r) => r.json())
       .then((data) => setAddress(data))
-      .catch((e) => setAddress(null))
+      .catch(() => setAddress(null))
       .finally(() => setLoading(false))
   }, [loading, zipcode])
 

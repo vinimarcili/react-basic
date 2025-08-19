@@ -1,8 +1,12 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Counter.css';
 
 export default function Counter() {
   const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    console.log(`Count updated: ${count}`);
+  }, [count])
 
   return (
     <div className="counter-bg">
